@@ -12,6 +12,8 @@ In deze repository wordt de Gitflow branching strategie gebruikt. Hiervoor worde
 - `feature/[feature_naam]` - Feature-branches worden gebruikt voor alle nieuwe features. De branches worden gemaakt vanuit de develop-branch en wanneer ze gereed zijn met een pull request teruggevoegd.
 - `hotfix/[hotfix_naam]` - Deze branch wordt gebruikt wanneer er snel belangrijke veranderingen nodig zijn in de main-branch. Deze veranderingen moeten ook met de develop-branch worden gemerged om te voorkomen dat de bug opnieuw wordt geïntroduceerd.
 
+Pull requests op de main-, develop- en release-branches worden pas geaccepteerd nadat de pipeline tests een succesvol resultaat teruggeven.
+
 ## Studentversie:  
 ### UC04 Kiezen kleur boodschappenlijst  
 Is compleet.
