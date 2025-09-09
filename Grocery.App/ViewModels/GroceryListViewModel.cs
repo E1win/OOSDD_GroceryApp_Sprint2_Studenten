@@ -14,10 +14,10 @@ namespace Grocery.App.ViewModels
 
         public GroceryListViewModel(IGroceryListService groceryListService, GlobalViewModel global) 
         {
-            Title = "Boodschappenlijst";
             _groceryListService = groceryListService;
             _global = global;
             GroceryLists = new(_groceryListService.GetAll(_global.Client.Id));
+            Title = $"Boodschappenlijst van {_global.Client.Name}";
         }
 
         [RelayCommand]
